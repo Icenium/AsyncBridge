@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsyncCompatLibExtensions.cs" />
+    <Compile Include="IProgress.cs" />
     <Compile Include="Properties\SpecificAssemblyInfo.cs" />
     <Compile Include="Runtime.CompilerServices\AsyncMethodBuilderCore.cs" />
     <Compile Include="Runtime.CompilerServices\AsyncMethodTaskCache.cs" />
