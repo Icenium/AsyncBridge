@@ -16,6 +16,24 @@ namespace System.Threading.Tasks
 			return Task.Run(action, cancellationToken);
 		}
 
+		public static Task Delay(int miliseconds)
+		{
+			return Task.Delay(miliseconds);
+		}
+		public static Task Delay(int miliseconds, CancellationToken cancellationToken)
+		{
+			return Task.Delay(miliseconds, cancellationToken);
+		}
+
+		public static Task Delay(TimeSpan miliseconds)
+		{
+			return Task.Delay(miliseconds);
+		}
+		public static Task Delay(TimeSpan miliseconds, CancellationToken cancellationToken)
+		{
+			return Task.Delay(miliseconds, cancellationToken);
+		}
+
 		public static Task<TResult> Run<TResult>(Func<TResult> function)
 		{
 			return Task.Run<TResult>(function);
